@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Suit Game!!</title>
+
+	<!-- Reset and Bootstrap File -->
+		<link rel="stylesheet" type="text/css" href="assets/style/reset.css"> 
+
+	  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	
+	<!-- CSS File -->
+
+		<link rel="stylesheet" type="text/css" href="assets/style/css.css"> 
+	<!-- JQuery -->
+	  <script src="https://code.jquery.com/jquery.js"></script>
+
+
+</head>
+
+<body>
+
+<div class="container-fluid">
+<!--create banner for title-->
+	<div class="jumbotron" id="bigheading">
+ 	 <h1>Welcome to the Suit Game!</h1>
+ 	</div>
+
+ <!--create panel for instructions-->
+		<div class="panel panel-default">
+		  <div class="panel-heading">
+		    <h3 class="panel-title">Instructions</h3>
+		  </div>
+		  <div class="panel-body">
+		    <p id="instr1"> You will be given a random number at the start of the game</p>
+		    <p id="instr2"> There are four playing card suits below. By clicking on a card suit, you will add a specific amount of points to your total score.</p>
+		    <p id="instr3"> You <span id="strong1">win</span> the game by matching your total score to the random nuber. </p>
+		    <p id="instr4">Be careful! The value of each card suit <span id="strong1">is hidden</span> from you until you click it.</p>
+		    <p id="instr5">Each time when the game starts over, the game will change the values of each card suit.</p>
+		    <br><br>
+
+		    <p id="luck">Good luck!</p>
+		  </div>
+		</div>
+<!--create panel for Random number-->
+	<div class="container-fluid">
+			<button type="button" id="startover" class="btn btn-default">New Game</button>
+			<hr>
+		<div class="row">
+			<div class="col-lg-9">
+				<div class="row">
+					<div class="col-lg-6">	
+						<div class="panel panel-default">
+					  		<div class="panel-heading">
+					    		  <h3 class="panel-title">Try to get this number!</h3>
+					    	</div>
+					  		<div class="panel-body">
+					   			<div id="randNum"></div> 
+					 		 </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-9">
+				<div class="row">
+					<div class="col-lg-6">	
+						<div class="panel panel-default">
+					  		<div class="panel-heading">
+					    		<h3 class="panel-title">Click on a card suit!</h3>
+					  		</div>
+					  		<div class="panel-body">
+					   			<div><img class= "suit" id="heartpic" src="assets\images\heart.png" width="60px"> &nbsp; &nbsp; &nbsp; &nbsp;
+					   			<img class= "suit"  id="clubpic" src=" assets\images\club.png" width="60px"> &nbsp; &nbsp; &nbsp; &nbsp;
+					   			<img class= "suit" id="diamondpic" src=" assets\images\diamond.png" width="60px"> &nbsp; &nbsp; &nbsp; &nbsp;
+					   			<img  class= "suit" id="spadepic" src=" assets\images\spade.png" width="60px" ></div>
+					   			<hr/> 
+					   			<div id="yourtotal">test score</div>
+					 		 </div>
+						</div>
+					</div>
+				</div>
+					<div class="col-lg-3">	
+						<div class="panel panel-default">
+					  		<div class="panel-heading">
+					    		<h3 class="panel-title">Wins and losses!</h3>
+					  		</div>
+					  		<div class="panel-body">
+					  			<div id="yourwins">wins</div>
+					   			<div id="yourlosses">losses</div> 
+					   			 
+					 		 </div>
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+<!--close container-->
+
+</div>
+<script src="assets/javascript/javascript.js"></script>
+</body>
+</html>
